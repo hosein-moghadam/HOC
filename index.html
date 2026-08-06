@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="HOC Super App — The next-generation AI-powered mobile platform for global income generation and digital finance." />
+  <meta name="author" content="Hossein Sadeghghol Moghadam" />
+  <meta property="og:title" content="HOC Super App | AI-Powered Mobile Platform" />
+  <meta property="og:description" content="Building the next-generation mobile platform for everyone. Stable income. Global reach. Powered by AI." />
+  <meta property="og:type" content="website" />
+  <title>HOC Super App | AI-Powered Mobile Platform</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ========== LOADER ========== -->
+  <div id="loader" class="loader">
+    <div class="loader__ring"></div>
+    <span class="loader__text">HOC</span>
+  </div>
+
+  <!-- ========== HEADER / NAV ========== -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#hero" class="nav__logo">
+        <img src="images/logo.png" alt="HOC Logo" class="nav__logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+        <span class="nav__logo-text" style="display:none;">HOC</span>
+      </a>
+      <ul class="nav__list" id="navList">
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#features" class="nav__link">Features</a></li>
+        <li><a href="#projects" class="nav__link">Projects</a></li>
+        <li><a href="#roadmap" class="nav__link">Roadmap</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+      <a href="#contact" class="btn btn--primary nav__cta">Get Early Access</a>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <!-- Animated particle canvas -->
+    <canvas id="particleCanvas" class="hero__canvas"></canvas>
+
+    <div class="hero__bg-image">
+      <img src="images/hero.jpg" alt="HOC Hero Background" onerror="this.parentElement.style.background='none'" />
+    </div>
+
+    <div class="hero__overlay"></div>
+
+    <div class="container hero__content">
+      <div class="hero__badge">
+        <span class="hero__badge-dot"></span>
+        <span>Currently in Development</span>
+      </div>
+      <h1 class="hero__title">
+        The Future of<br />
+        <span class="hero__title--gradient">Digital Finance</span><br />
+        Is Here
+      </h1>
+      <p class="hero__subtitle">
+        HOC Super App — An AI-powered platform that creates a stable, reliable income for every person on the planet. One app. One digital currency. Infinite possibilities.
+      </p>
+      <div class="hero__actions">
+        <a href="#features" class="btn btn--primary btn--lg">
+          <span>Explore Features</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#about" class="btn btn--ghost btn--lg">Learn More</a>
+      </div>
+      <div class="hero__stats">
+        <div class="hero__stat">
+          <span class="hero__stat-number" data-target="4">0</span>
+          <span class="hero__stat-unit">Years</span>
+          <span class="hero__stat-label">In Development</span>
+        </div>
+        <div class="hero__stat">
+          <span class="hero__stat-number" data-target="12">0</span>
+          <span class="hero__stat-unit">+</span>
+          <span class="hero__stat-label">Inventions</span>
+        </div>
+        <div class="hero__stat">
+          <span class="hero__stat-number" data-target="2">0</span>
+          <span class="hero__stat-unit">Platforms</span>
+          <span class="hero__stat-label">Android & iOS</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__scroll">
+      <span>Scroll Down</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">Who We Are</span>
+        <h2 class="section__title">Meet the Inventor</h2>
+        <p class="section__desc">A visionary engineer and innovator pushing the boundaries of technology and energy.</p>
+      </div>
+      <div class="about__grid">
+        <div class="about__card card--glow reveal">
+          <div class="about__avatar">
+            <div class="about__avatar-ring"></div>
+            <div class="about__avatar-inner">HS</div>
+          </div>
+          <h3 class="about__name">Hossein Sadeghghol Moghadam</h3>
+          <p class="about__role">Inventor · Innovator · Developer</p>
+          <p class="about__bio">
+            38 years old, with 12 ideas and inventions spanning new energies, home heating systems, and programming. Creator of the HOC Super App — a project 4 years in the making that aims to redefine global digital finance.
+          </p>
+          <div class="about__tags">
+            <span class="tag">AI Development</span>
+            <span class="tag">Blockchain</span>
+            <span class="tag">Energy Innovation</span>
+            <span class="tag">Mobile Platforms</span>
+          </div>
+        </div>
+        <div class="about__info reveal">
+          <div class="about__info-item">
+            <div class="about__info-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+            </div>
+            <div>
+              <h4>Visionary Thinking</h4>
+              <p>Every invention starts with a problem worth solving. HOC began as a vision to give every person on earth a reliable income stream.</p>
+            </div>
+          </div>
+          <div class="about__info-item">
+            <div class="about__info-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            </div>
+            <div>
+              <h4>Power Generation Innovation</h4>
+              <p>Designed and built a certified power generation system: 736W input → up to 4,416W output. Tested and certified by an independent accredited laboratory.</p>
+            </div>
+          </div>
+          <div class="about__info-item">
+            <div class="about__info-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
+            </div>
+            <div>
+              <h4>Super App Development</h4>
+              <p>Currently in final coding stages after 4 years of roadmap planning, prototype iterations, and specialized programming training.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FEATURES ========== -->
+  <section class="section features" id="features">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">Core Capabilities</span>
+        <h2 class="section__title">Why HOC Changes Everything</h2>
+        <p class="section__desc">A single platform that merges AI, digital currency, and passive income into one seamless experience.</p>
+      </div>
+      <div class="features__grid">
+
+        <div class="feature-card card--glow reveal">
+          <div class="feature-card__icon feature-card__icon--blue">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/></svg>
+          </div>
+          <h3>AI-Powered Income</h3>
+          <p>Every user generates a steady, reliable income automatically through the AI engine — regardless of job, location, or age.</p>
+        </div>
+
+        <div class="feature-card card--glow reveal">
+          <div class="feature-card__icon feature-card__icon--purple">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/></svg>
+          </div>
+          <h3>Network Multiplier</h3>
+          <p>Connect your app to others and earn passive income even while you sleep. Your network works for you 24/7.</p>
+        </div>
+
+        <div class="feature-card card--glow reveal">
+          <div class="feature-card__icon feature-card__icon--cyan">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h3>HOC Digital Currency</h3>
+          <p>A single unified digital currency for all people worldwide. A dedicated blockchain is in development for a fully decentralized financial system.</p>
+        </div>
+
+        <div class="feature-card card--glow reveal">
+          <div class="feature-card__icon feature-card__icon--green">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+          </div>
+          <h3>In-App Marketplace</h3>
+          <p>Shop at stores and access dozens of services directly within the app using your HOC earnings.</p>
+        </div>
+
+        <div class="feature-card card--glow reveal">
+          <div class="feature-card__icon feature-card__icon--orange">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          </div>
+          <h3>Dedicated Secure Server</h3>
+          <p>All user data is protected on a dedicated server with enterprise-grade security protocols and privacy safeguards.</p>
+        </div>
+
+        <div class="feature-card card--glow reveal">
+          <div class="feature-card__icon feature-card__icon--pink">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h3>Global Accessibility</h3>
+          <p>Available for Android and iOS users worldwide. No restrictions based on job, location, or background.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">Portfolio</span>
+        <h2 class="section__title">Active Projects</h2>
+        <p class="section__desc">A glimpse into the innovations currently in development.</p>
+      </div>
+      <div class="projects__grid">
+
+        <div class="project-card card--glow reveal">
+          <div class="project-card__header">
+            <span class="project-card__number">#4</span>
+            <span class="project-card__status project-card__status--open">Open</span>
+          </div>
+          <h3 class="project-card__title">HOC Super App</h3>
+          <p class="project-card__desc">An AI-powered mobile application for Android and iOS. Building the next-generation mobile platform for everyone — with passive income, digital currency, and a global marketplace.</p>
+          <div class="project-card__tags">
+            <span class="tag">AI</span>
+            <span class="tag">Mobile</span>
+            <span class="tag">Blockchain</span>
+          </div>
+        </div>
+
+        <div class="project-card card--glow reveal">
+          <div class="project-card__header">
+            <span class="project-card__number">#3</span>
+            <span class="project-card__status project-card__status--open">Open</span>
+          </div>
+          <h3 class="project-card__title">Power Generation System</h3>
+          <p class="project-card__desc">A certified energy system that generates electricity by connecting to the ground. Input: 736W → Output: 2,100–4,416W. Tested and certified by an independent accredited laboratory. Currently in commercialization phase.</p>
+          <div class="project-card__tags">
+            <span class="tag">Energy</span>
+            <span class="tag">Hardware</span>
+            <span class="tag">Certified</span>
+          </div>
+        </div>
+
+        <div class="project-card card--glow reveal">
+          <div class="project-card__header">
+            <span class="project-card__number">#2</span>
+            <span class="project-card__status project-card__status--open">Open</span>
+          </div>
+          <h3 class="project-card__title">Corporate Information System</h3>
+          <p class="project-card__desc">A custom enterprise solution for categorizing and organizing company information — allowing individuals to manage, share, or keep private their data within a structured organizational framework.</p>
+          <div class="project-card__tags">
+            <span class="tag">Enterprise</span>
+            <span class="tag">Data</span>
+            <span class="tag">SaaS</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ROADMAP ========== -->
+  <section class="section roadmap" id="roadmap">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">Development Timeline</span>
+        <h2 class="section__title">HOC Roadmap</h2>
+        <p class="section__desc">From concept to global launch — every milestone on the path to changing the world.</p>
+      </div>
+      <div class="roadmap__timeline">
+
+        <div class="roadmap__item roadmap__item--done reveal">
+          <div class="roadmap__dot roadmap__dot--done"></div>
+          <div class="roadmap__content card--glow">
+            <span class="roadmap__phase">Phase 1</span>
+            <h4>Concept & Roadmap Planning</h4>
+            <p>4 years of careful roadmap planning, overcoming obstacles, and finding a first-of-its-kind solution to enable global income generation.</p>
+            <span class="roadmap__badge roadmap__badge--done">Completed</span>
+          </div>
+        </div>
+
+        <div class="roadmap__item roadmap__item--done reveal">
+          <div class="roadmap__dot roadmap__dot--done"></div>
+          <div class="roadmap__content card--glow">
+            <span class="roadmap__phase">Phase 2</span>
+            <h4>Prototype Development</h4>
+            <p>Two full prototypes built and iterated upon. Specialized programming training completed to achieve coherent, production-ready code.</p>
+            <span class="roadmap__badge roadmap__badge--done">Completed</span>
+          </div>
+        </div>
+
+        <div class="roadmap__item roadmap__item--active reveal">
+          <div class="roadmap__dot roadmap__dot--active"></div>
+          <div class="roadmap__content card--glow">
+            <span class="roadmap__phase">Phase 3</span>
+            <h4>Final Coding & Bug Fixing</h4>
+            <p>Currently in the final stages of writing specialized code. Fixing possible bugs and completing the super application's core functionality.</p>
+            <span class="roadmap__badge roadmap__badge--active">In Progress</span>
+          </div>
+        </div>
+
+        <div class="roadmap__item reveal">
+          <div class="roadmap__dot"></div>
+          <div class="roadmap__content card--glow">
+            <span class="roadmap__phase">Phase 4</span>
+            <h4>General & Professional Review</h4>
+            <p>Multiple rounds of general and professional audits to ensure zero errors and full system integrity before public release.</p>
+            <span class="roadmap__badge">Upcoming</span>
+          </div>
+        </div>
+
+        <div class="roadmap__item reveal">
+          <div class="roadmap__dot"></div>
+          <div class="roadmap__content card--glow">
+            <span class="roadmap__phase">Phase 5</span>
+            <h4>Global Legal Permits</h4>
+            <p>Obtaining all necessary global legal permissions to publish on reputable international platforms and the official HOC website.</p>
+            <span class="roadmap__badge">Upcoming</span>
+          </div>
+        </div>
+
+        <div class="roadmap__item reveal">
+          <div class="roadmap__dot"></div>
+          <div class="roadmap__content card--glow">
+            <span class="roadmap__phase">Phase 6</span>
+            <h4>Official Global Launch</h4>
+            <p>Public release on Android and iOS. Every person in the world with a mobile phone can start generating stable, reliable income. HOC blockchain and coin launch to follow.</p>
+            <span class="roadmap__badge">Future</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">Get In Touch</span>
+        <h2 class="section__title">Join the Revolution</h2>
+        <p class="section__desc">Interested in early access, partnerships, or investment? Reach out.</p>
+      </div>
+      <div class="contact__grid">
+        <div class="contact__info reveal">
+          <div class="contact__item">
+            <div class="contact__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            </div>
+            <div>
+              <h4>GitHub</h4>
+              <a href="https://github.com/hosein-moghadam" target="_blank" rel="noopener noreferrer">@hosein-moghadam</a>
+            </div>
+          </div>
+          <div class="contact__item">
+            <div class="contact__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            </div>
+            <div>
+              <h4>Email</h4>
+              <span>Contact via GitHub</span>
+            </div>
+          </div>
+          <div class="contact__item">
+            <div class="contact__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            </div>
+            <div>
+              <h4>Location</h4>
+              <span>Global — Remote First</span>
+            </div>
+          </div>
+        </div>
+        <form class="contact__form card--glow reveal" id="contactForm">
+          <div class="form__group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" required />
+          </div>
+          <div class="form__group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form__group">
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject">
+              <option value="">Select a topic</option>
+              <option value="early-access">Early Access Request</option>
+              <option value="investment">Investment Opportunity</option>
+              <option value="partnership">Partnership</option>
+              <option value="general">General Inquiry</option>
+            </select>
+          </div>
+          <div class="form__group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us about your interest..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">
+            <span>Send Message</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <span class="footer__logo">HOC</span>
+          <p>Building the next-generation mobile platform for everyone. Powered by AI. Driven by innovation.</p>
+        </div>
+        <div class="footer__links">
+          <h5>Navigation</h5>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#roadmap">Roadmap</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__links">
+          <h5>Projects</h5>
+          <ul>
+            <li><a href="#projects">HOC Super App</a></li>
+            <li><a href="#projects">Power Generation</a></li>
+            <li><a href="#projects">Corporate System</a></li>
+          </ul>
+        </div>
+        <div class="footer__social">
+          <h5>Connect</h5>
+          <a href="https://github.com/hosein-moghadam" target="_blank" rel="noopener noreferrer" class="footer__social-link">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2025 HOC Super App. All rights reserved. Built by <strong>Hossein Sadeghghol Moghadam</strong>.</p>
+        <p class="footer__tagline">Changing the world, one innovation at a time.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
